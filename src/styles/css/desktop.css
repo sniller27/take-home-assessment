@@ -2,6 +2,9 @@
  * PATHS
  */
 /**
+ * MEDIA QUERIES
+ */
+/**
  * COLORS
  */
 /**
@@ -10,3 +13,33 @@
 /*
 	DESKTOP
  */
+@media screen and (min-width: 768px) {
+  .navbar-default .navbar-nav > li > a:hover:not(.free-trial-button) {
+    color: #f93a5a; }
+  .concept-boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 865px; }
+  .presentationbox {
+    width: 40%;
+    min-width: 456px; }
+  .concept-box {
+    margin-bottom: 0px; }
+  .navbar-default {
+    background-color: transparent; }
+  .navbar {
+    margin-top: 20px; }
+  .free-trial-button, .free-trial-button:focus {
+    background-color: #f93a5a !important;
+    padding-right: 35px !important;
+    padding-left: 35px !important;
+    font-weight: 800 !important; }
+  .free-trial-button:hover {
+    background-color: #FA8599 !important;
+    color: #ffffff !important; }
+  .free-trial-list-item {
+    margin-left: 20px; } }

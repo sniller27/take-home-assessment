@@ -2,6 +2,9 @@
  * PATHS
  */
 /**
+ * MEDIA QUERIES
+ */
+/**
  * COLORS
  */
 /**
@@ -12,7 +15,6 @@
  */
 * {
   font-family: "Raleway", sans-serif !important;
-  color: #ffffff !important;
   font-weight: 500 !important; }
 
 p, a {
@@ -20,10 +22,12 @@ p, a {
 
 body {
   min-height: 100vh;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(44, 44, 49, 0.7)), to(rgba(44, 44, 49, 0.7))), url(../../../assets/img/background.jpg);
-  background: linear-gradient(0deg, rgba(44, 44, 49, 0.7), rgba(44, 44, 49, 0.7)), url(../../../assets/img/background.jpg);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(44, 44, 49, 0.7)), to(rgba(44, 44, 49, 0.7))), url("../../../assets/img/background.jpg");
+  background: linear-gradient(0deg, rgba(44, 44, 49, 0.7), rgba(44, 44, 49, 0.7)), url("../../../assets/img/background.jpg");
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #ffffff; }
 
 .container {
   height: 100vh;
@@ -46,28 +50,23 @@ body {
 .navbar-toggle .icon-bar {
   background-color: #ffffff !important; }
 
-.navbar {
-  margin-top: 20px; }
+.navbar-nav {
+  margin: 0.5px -15px; }
 
-.navbar-nav li a:hover {
-  color: #f93a5a !important; }
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
+  color: #ffffff; }
 
 .navbar-default {
-  background-color: transparent;
+  background-color: rgba(44, 44, 49, 0.7);
   border: 0px; }
 
-.button {
-  background-color: #f93a5a;
-  border: 0px;
-  padding: 10px 25px 10px 25px;
-  font-weight: 800 !important;
-  margin-top: 6px; }
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: transparent; }
 
-.button:hover {
-  background-color: #FA8599; }
+.free-trial-button {
+  background-color: #f93a5a; }
 
 .presentationbox {
-  width: 40%;
   margin: auto;
   text-align: center; }
 
@@ -107,9 +106,7 @@ body {
 
 .concept-boxes {
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /* .. junk .. */
   /*position: fixed;*/
   /*bottom: 0;*/
   /*width: 600px;*/
@@ -117,13 +114,9 @@ body {
   /*margin: auto;*/
   /*align-items: center;*/
   /*justify-content: center;*/
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
   /*justify-content: space-between;*/
   /*justify-content: center;*/
-  /*flex-flow: row wrap;*/
-  width: 100%;
-  max-width: 865px; }
+  /*flex-flow: row wrap;*/ }
 
 .concept-boxes .concept-box {
   /*align-content: flex-end; */
@@ -173,3 +166,9 @@ body {
   background-position: center;
   margin-top: 50px;
   margin-bottom: 20px; }
+
+@media screen and (max-width: 768px) {
+  .concept-box {
+    margin-bottom: 20px; }
+  .concept-boxes {
+    margin-top: 30px; } }

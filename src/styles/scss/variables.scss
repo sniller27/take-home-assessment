@@ -1,8 +1,14 @@
 /**
  * PATHS
  */
-$assets-path: '../../../assets';
-$icons-path: $assets-path + '/img/icons/';
+$assets-path: '../../../assets/';
+$img-path: $assets-path + 'img/';
+$icons-path: $img-path + 'icons/';
+
+/**
+ * MEDIA QUERIES
+ */
+$break-small: 768px;
 
 /**
  * COLORS

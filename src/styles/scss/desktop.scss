@@ -2,5 +2,52 @@
 /*
 	DESKTOP
  */
-.lolz {
+@media screen and (min-width: $break-small) {
+
+	.navbar-default .navbar-nav>li>a:hover:not(.free-trial-button) {
+		color: $accent-color;
+	}
+	
+	.concept-boxes {
+		display: flex;
+	  	justify-content: space-around;
+		width: 100%;
+	  	max-width: 865px;
+	}
+
+	.presentationbox {
+	    width: 40%;
+	    min-width: 456px;
+	}
+
+	.concept-box {
+		margin-bottom: 0px;
+	}
+
+	.navbar-default {
+		background-color: transparent;
+	}
+
+	.navbar {
+		margin-top: 20px;
+	}
+
+	.free-trial-button, .free-trial-button:focus {
+		background-color: $accent-color !important;
+		padding-right: 35px !important;
+		padding-left: 35px !important;
+		font-weight: 800 !important;
+	}
+
+	.free-trial-button:hover {
+		background-color: $button-hover-color !important;
+		color: $bright-color !important;
+	}
+
+	.free-trial-list-item {
+		margin-left: 20px;
+		// margin-right: 20px;
+	}
+
 }
+
