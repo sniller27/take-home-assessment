@@ -1,0 +1,187 @@
+* {
+  font-family: 'Raleway', sans-serif !important;
+  color: white !important;
+  font-weight: 500 !important;
+}
+
+p, a {
+	font-size: 1.2em !important;
+}
+html {
+  
+}
+body {	
+	min-height:100vh;
+	background:linear-gradient(0deg,rgba(44,44,49,0.7),rgba(44,44,49,0.7)),url(assets/img/background.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+.container {
+	height: 100vh;
+	display: flex;
+  	flex-direction: column;
+}
+
+#content {
+	flex: 1 0 auto;
+}
+
+/**
+ * Bootstrap navbar
+ */
+.navbar {
+	margin-top: 20px;
+}
+
+.navbar-nav li a:hover {
+	color: #f93a5a !important;
+}
+
+.navbar-default {
+	background-color: transparent;
+	border: 0px;
+}
+
+.button {
+	background-color: #f93a5a;
+	border: 0px;
+	padding: 10px 25px 10px 25px;
+	font-weight: 800 !important;
+	margin-top: 6px;
+}
+
+.button:hover {
+	background-color: #FA8599;
+}
+
+.presentationbox {
+	width: 40%;
+	margin: auto;
+	text-align: center;
+}
+
+/*.presentationbox h1 {
+	display: inline-block;
+	position: relative;
+}
+
+.presentationbox h1:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	height: 3px;
+	background: red;
+
+	left: 0;
+	right: 0;
+
+	width: 50px;
+	margin: 0 auto;
+}*/
+
+.presentationbox h1 {
+	position: relative;
+	margin-bottom: 35px;
+}
+
+.presentationbox h1:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	height: 3px;
+	background: #f93a5a;
+
+	left: 35%;
+	right: 35%;
+
+	display:block;
+
+	/*Extra*/
+	bottom: -20px;
+}
+
+.concept-boxes {
+	margin: auto;
+	display: flex;
+	/*position: fixed;*/
+    /*bottom: 0;*/
+    /*width: 600px;*/
+
+    /*vertical-align: bottom;*/
+
+    /*margin: auto;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+
+
+  justify-content: space-around;
+  /*justify-content: space-between;*/
+	
+  /*justify-content: center;*/
+  /*flex-flow: row wrap;*/
+	width: 100%;
+  	max-width: 865px;
+  
+}
+
+.concept-boxes .concept-box {
+	/*align-content: flex-end; */
+
+	text-align: center;
+	height: 250px;
+	width: 271px;
+
+	/*background-image: url(laptop.png);
+	
+	background-repeat: no-repeat;
+	background-position: center;*/
+
+	
+	display: flex;
+	/*justify-content: center;*/
+	flex-direction: column;
+
+}
+
+.concept-boxes div h4 {
+	/*align-self: flex-end;*/
+	margin-bottom: 40px;
+	font-weight: 800 !important;
+}
+
+.bluebox {
+	background-color: #3B3756;
+}
+
+.tealbox {
+	background-color: #78A5A3;
+}
+
+.redbox {
+	background-color: #f93a5a;
+}
+
+.bluebox .icon-placeholder {
+	background-image: url(assets/img/icons/prototype-icon.png);
+}
+
+.tealbox .icon-placeholder {
+	background-image: url(assets/img/icons/magnifying-glass-icon.png);
+}
+
+.redbox .icon-placeholder {
+	background-image: url(assets/img/icons/laptop-icon.png);
+}
+
+.icon-placeholder {
+	/*background-color: red;*/
+	width: 100%;
+	height: 92px;
+	
+	background-repeat: no-repeat;
+	background-position: center;
+
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
