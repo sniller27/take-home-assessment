@@ -1,10 +1,12 @@
+@import "variables.scss";
+
 /*
 	MOBILE
  */
 
 * {
-  font-family: 'Raleway', sans-serif !important;
-  color: white !important;
+  font-family: $font-primary, sans-serif !important;
+  color: $bright-color !important;
   font-weight: 500 !important;
 }
 
@@ -14,7 +16,7 @@ p, a {
 
 body {	
 	min-height:100vh;
-	background:linear-gradient(0deg,rgba(44,44,49,0.7),rgba(44,44,49,0.7)),url(../../../assets/img/background.jpg);
+	background:linear-gradient(0deg,$overlay-color,$overlay-color),url(../../../assets/img/background.jpg);
 	background-size:cover;
 	background-repeat: no-repeat;
 }
@@ -32,12 +34,17 @@ body {
 /**
  * Bootstrap navbar
  */
+
+.navbar-toggle .icon-bar {
+	background-color: $bright-color !important;
+}
+
 .navbar {
 	margin-top: 20px;
 }
 
 .navbar-nav li a:hover {
-	color: #f93a5a !important;
+	color: $accent-color !important;
 }
 
 .navbar-default {
@@ -46,7 +53,7 @@ body {
 }
 
 .button {
-	background-color: #f93a5a;
+	background-color: $accent-color;
 	border: 0px;
 	padding: 10px 25px 10px 25px;
 	font-weight: 800 !important;
@@ -54,7 +61,7 @@ body {
 }
 
 .button:hover {
-	background-color: #FA8599;
+	background-color: $button-hover-color;
 }
 
 .presentationbox {
@@ -92,7 +99,7 @@ body {
 	position: absolute;
 	bottom: 0;
 	height: 3px;
-	background: #f93a5a;
+	background: $accent-color;
 
 	left: 35%;
 	right: 35%;
@@ -153,27 +160,27 @@ body {
 }
 
 .bluebox {
-	background-color: #3B3756;
+	background-color: $primary-color;
 }
 
 .tealbox {
-	background-color: #78A5A3;
+	background-color: $secondary-color;
 }
 
 .redbox {
-	background-color: #f93a5a;
+	background-color: $accent-color;
 }
 
 .bluebox .icon-placeholder {
-	background-image: url(../../../assets/img/icons/prototype-icon.png);
+	background-image: url($icons-path + 'prototype-icon.png');
 }
 
 .tealbox .icon-placeholder {
-	background-image: url(../../../assets/img/icons/magnifying-glass-icon.png);
+	background-image: url($icons-path + 'magnifying-glass-icon.png');
 }
 
 .redbox .icon-placeholder {
-	background-image: url(../../../assets/img/icons/laptop-icon.png);
+	background-image: url($icons-path + 'laptop-icon.png');
 }
 
 .icon-placeholder {

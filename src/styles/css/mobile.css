@@ -1,9 +1,18 @@
+/**
+ * PATHS
+ */
+/**
+ * COLORS
+ */
+/**
+ * FONTS
+ */
 /*
 	MOBILE
  */
 * {
-  font-family: 'Raleway', sans-serif !important;
-  color: white !important;
+  font-family: "Raleway", sans-serif !important;
+  color: #ffffff !important;
   font-weight: 500 !important; }
 
 p, a {
@@ -34,6 +43,9 @@ body {
 /**
  * Bootstrap navbar
  */
+.navbar-toggle .icon-bar {
+  background-color: #ffffff !important; }
+
 .navbar {
   margin-top: 20px; }
 
@@ -146,13 +158,13 @@ body {
   background-color: #f93a5a; }
 
 .bluebox .icon-placeholder {
-  background-image: url(../../../assets/img/icons/prototype-icon.png); }
+  background-image: url("../../../assets/img/icons/prototype-icon.png"); }
 
 .tealbox .icon-placeholder {
-  background-image: url(../../../assets/img/icons/magnifying-glass-icon.png); }
+  background-image: url("../../../assets/img/icons/magnifying-glass-icon.png"); }
 
 .redbox .icon-placeholder {
-  background-image: url(../../../assets/img/icons/laptop-icon.png); }
+  background-image: url("../../../assets/img/icons/laptop-icon.png"); }
 
 .icon-placeholder {
   width: 100%;
