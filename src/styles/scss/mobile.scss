@@ -70,6 +70,10 @@ body {
 	background: transparent;
 }
 
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+	color: $bright-color;
+}
+
 /**
  * Header text
  */

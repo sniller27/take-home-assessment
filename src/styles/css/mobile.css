@@ -70,6 +70,9 @@ body {
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
   background: transparent; }
 
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+  color: #ffffff; }
+
 /**
  * Header text
  */
