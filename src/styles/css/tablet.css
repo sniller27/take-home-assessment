@@ -13,3 +13,19 @@
 /*
 	TABLET
  */
+@media screen and (min-width: 535px) {
+  .concept-boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 865px;
+    margin-top: 0px; }
+    .concept-boxes .concept-box {
+      margin-bottom: 0px;
+      height: 270px; }
+      .concept-boxes .concept-box h4 {
+        margin-left: 10px;
+        margin-right: 10px; } }

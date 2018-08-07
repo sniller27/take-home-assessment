@@ -5,6 +5,24 @@
 
 @media screen and (min-width: $break-small) {
 
+	.concept-boxes {
+
+		display: flex;
+	  	justify-content: space-around;
+		width: 100%;
+	  	max-width: 865px;
+	  	margin-top: 0px;
+
+	  	.concept-box {
+			margin-bottom: 0px;
+	  		height: 270px;
+
+	  		h4 {
+	  			margin-left: 10px;
+	  			margin-right: 10px;
+	  		}
+	  	}
+	}
 
 }
 
