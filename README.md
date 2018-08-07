@@ -14,6 +14,11 @@ Run dev environment
 $ gulp
 ```
 
+## Node server for deployment
+```sh
+$ node server.js
+```
+
 ## Command for potential Gulp watch issue:
 - Gulp ENOSPC error: echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 
